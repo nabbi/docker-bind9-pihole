@@ -1,4 +1,4 @@
-# Oubliette :: Docker :: Pi-Hole and Bind9
+# Docker :: Pi-Hole and Bind9
 
 Docker Compose integrating [Pi-Hole](https://pi-hole.net/), [ISC Bind9](https://www.isc.org/bind/), and [BIND ad blocker (forked from Trellmor)](https://github.com/nabbi/bind-adblock)
 
