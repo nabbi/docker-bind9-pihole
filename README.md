@@ -21,11 +21,10 @@ The containers need to be started to populate the volumes with initial system co
 
 ```
 docker-compose pull
-docker-compose build
 docker-compose up -d
 ```
 
-Then modify the local configurations tailored to your deployment, run the scrip to copy your files into the volumes.
+Modify the local configurations tailored to your deployment, then run the script to copy those files into the volumes.
 This creates a temporary container to interact with the docker volumes.
 
 ```
@@ -40,9 +39,9 @@ Restart the containers to force loading with your updated configurations.
 docker-compose restart
 ```
 
-### Crontab
+### Cron
 
-An example crontab is provided to be installed on the docker host, it starts the adblock container which writes its updated zone file into the docker container, then restarts the bind9 container.
+An example crontab is provided to be installed on the docker host, it starts the adblock container which writes its updated zone file into the docker volume, then restarts the bind9 container.
 
 
 ## More info
