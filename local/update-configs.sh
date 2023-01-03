@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-PREFIX="docker-bind9-pihole"
+PREFIX="$(basename $(dirname $(dirname $(readlink -f $0))))"
 C="${PREFIX}_local"
 
 # check if config volumes were initialized
