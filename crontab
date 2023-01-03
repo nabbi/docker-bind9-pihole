@@ -1,0 +1,4 @@
+
+FILE="docker-compose.yml"
+0 2 * * *       root   docker-compose -f ${FILE} up adblock >/dev/null 2>&1 && docker-compose -f ${FILE} restart bind9 >/dev/null 2>&1
+

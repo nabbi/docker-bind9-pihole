@@ -1,0 +1,4 @@
+[submodule "bind-adblock"]
+	path = bind-adblock
+	url = https://github.com/nabbi/bind-adblock
+	branch = nabbi

@@ -1,0 +1,24 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+include "/etc/bind/zones.rfc1918";
+
+zone "rpz.local" {
+    type primary;
+    file "/var/lib/bind/rpz-local.zone";
+    allow-update { none; };
+    allow-transfer { none; };
+    allow-query { localhost; };
+};
+
+zone "rpz.adblocker" {
+    type primary;
+    file "/var/lib/bind/rpz-adblocker.zone";
+    allow-update { none; };
+    allow-transfer { none; };
+    allow-query { localhost; };
+};
+

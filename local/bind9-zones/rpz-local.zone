@@ -1,0 +1,10 @@
+@ 3600 IN SOA @ admin 11 86400 7200 2592000 86400
+@ 3600 IN NS LOCALHOST.
+
+; makes googles search results more friendly
+www.googleadservices.com    IN  CNAME   rpz-passthru.
+
+; tor gateway links
+onion.link IN CNAME .
+*.onion.link IN CNAME .
+
